@@ -123,13 +123,13 @@ const PokemonId = () => {
                         <div className='flex justify-center gap-6 text-center'>
 
                             <div>
-                                <h5>Weight</h5>
-                                <span>{pokemon?.weight}</span>
+                                <h5 className='text-xs'>Weight</h5>
+                                <span className='text-lg'>{pokemon?.weight}</span>
                             </div>
 
                             <div>
-                                <h5>Height</h5>
-                                <span>{pokemon?.height}</span>
+                                <h5 className='text-xs'>Height</h5>
+                                <span className='text-lg'>{pokemon?.height}</span>
                             </div>
 
                         </div>
@@ -162,12 +162,12 @@ const PokemonId = () => {
 
                     {/*stats*/}
                     <section>
-                        <h3 className='p-5'>Stats</h3>
+                        <h3 className='p-5 flex text-lg font-bold'>Stats</h3>
                         <section>
                             {
                                 pokemon?.stats.map(stat => (
                                     <article key={stat.stat.name}>
-                                        <section className='flex justify-between'>
+                                        <section className='flex justify-between font-bold'>
                                             <h5 className='capitalize'>{stat.stat.name}</h5>
                                             <span>{stat.base_stat}/255</span>
                                         </section>

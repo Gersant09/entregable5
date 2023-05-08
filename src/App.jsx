@@ -4,7 +4,7 @@ import './App.css'
 import Home from './pages/Home'
 import Pokedex from './pages/Pokedex'
 import ProtectedAuth from './components/auth/ProtectedAuth'
-import PokemonId from './pages/pokemonId'
+import PokemonId from './pages/PokemonId'
 
 function App() {
   
